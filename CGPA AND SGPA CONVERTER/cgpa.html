@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>SGPA Calculator</h1>
+        <br>
+    </header>
+    <div class="wrapper">
+        subject1 &nbsp;<input type="number" id="sub1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; credits
+        <input type="number" id="cs1">
+        <br> <br> subject2 &nbsp;<input type="number" id="sub2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; credits
+        <input type="number" id="cs2">
+        <br> <br> subject3 &nbsp;<input type="number" id="sub3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; credits
+        <input type="number" id="cs3">
+        <br> <br> subject4 &nbsp;<input type="number" id="sub4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; credits
+        <input type="number" id="cs4">
+        <br> <br> Lab1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="sub5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; credits
+        <input type="number" id="cs5">
+        <br> <br> Lab2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="sub6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; credits
+        <input type="number" id="cs6">
+        <br> <br>
+        <button type="button" onclick="fun()">convert </button>
+        <div>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function fun() {
+            var sub1 = document.getElementById('sub1').value;
+            var sub2 = document.getElementById('sub2').value;
+            var sub3 = document.getElementById('sub3').value;
+            var sub4 = document.getElementById('sub4').value;
+            var sub5 = document.getElementById('sub5').value;
+            var sub6 = document.getElementById('sub6').value;
+            var c1 = document.getElementById('cs1').value;
+            var c2 = document.getElementById('cs2').value;
+            var c3 = document.getElementById('cs3').value;
+            var c4 = document.getElementById('cs4').value;
+            var c5 = document.getElementById('cs5').value;
+            var c6 = document.getElementById('cs6').value;
+
+            if (sub1 >= 90 && sub1 <= 100) {
+                sub1 = 10 * c1;
+            } else if (sub1 >= 80 && sub1 <= 89) {
+                sub1 = 9 * c1;
+            } else if (sub1 >= 70 && sub1 <= 79) {
+                sub1 = 8 * c1;
+            } else if (sub1 >= 60 && sub1 <= 69) {
+                sub1 = 7 * c1;
+            } else if (sub1 >= 50 && sub1 <= 59) {
+                sub1 = 6 * c1;
+            } else if (sub1 >= 45 && sub1 <= 49) {
+                sub1 = 5 * c1;
+            } else if (sub1 >= 40 && sub1 <= 44) {
+                sub1 = 4 * c1;
+            } else if (sub1 >= 0 && sub1 <= 39) {
+                sub1 = 0 * c1;
+            }
+
+            /* Subject-2 Marks */
+            if (sub2 >= 90 && sub2 <= 100) {
+                sub2 = 10 * c2;
+            } else if (sub2 >= 80 && sub2 <= 89) {
+                sub2 = 9 * c2;
+            } else if (sub2 >= 70 && sub2 <= 79) {
+                sub2 = 8 * c2;
+            } else if (sub2 >= 60 && sub2 <= 69) {
+                sub2 = 7 * c2;
+            } else if (sub2 >= 50 && sub2 <= 59) {
+                sub2 = 6 * c2;
+            } else if (sub2 >= 45 && sub2 <= 49) {
+                sub2 = 5 * c2;
+            } else if (sub2 >= 40 && sub2 <= 44) {
+                sub2 = 4 * c2;
+            } else if (sub2 >= 0 && sub2 <= 39) {
+                sub2 = 0 * c2;
+            }
+
+            /* Subject-3 Marks */
+
+            if (sub3 >= 90 && sub3 <= 100) {
+                sub3 = 10 * c3;
+            } else if (sub3 >= 80 && sub3 <= 89) {
+                sub3 = 9 * c3;
+            } else if (sub3 >= 70 && sub3 <= 79) {
+                sub3 = 8 * c3;
+            } else if (sub3 >= 60 && sub3 <= 69) {
+                sub3 = 7 * c3;
+            } else if (sub3 >= 50 && sub3 <= 59) {
+                sub3 = 6 * c3;
+            } else if (sub3 >= 45 && sub3 <= 49) {
+                sub3 = 5 * c3;
+            } else if (sub3 >= 40 && sub3 <= 44) {
+                sub3 = 4 * c3;
+            } else if (sub3 >= 0 && sub3 <= 39) {
+                sub3 = 0 * c3;
+            }
+
+
+            if (sub4 >= 90 && sub4 <= 100) {
+                sub4 = 10 * c4;
+            } else if (sub4 >= 80 && sub4 <= 89) {
+                sub4 = 9 * c4;
+            } else if (sub4 >= 70 && sub4 <= 79) {
+                sub4 = 8 * c4;
+            } else if (sub4 >= 60 && sub4 <= 69) {
+                sub4 = 7 * c4;
+            } else if (sub4 >= 50 && sub4 <= 59) {
+                sub4 = 6 * c4;
+            } else if (sub4 >= 45 && sub4 <= 49) {
+                sub4 = 5 * c4;
+            } else if (sub4 >= 40 && sub4 <= 44) {
+                sub4 = 4 * c4;
+            } else if (sub4 >= 0 && sub4 <= 39) {
+                sub4 = 0 * c4;
+            }
+
+
+            if (sub5 >= 90 && sub5 <= 100) {
+                sub5 = 10 * c5;
+            } else if (sub5 >= 80 && sub5 <= 89) {
+                sub5 = 9 * c5;
+            } else if (sub5 >= 70 && sub5 <= 79) {
+                sub5 = 8 * c5;
+            } else if (sub5 >= 60 && sub5 <= 69) {
+                sub5 = 7 * c5;
+            } else if (sub5 >= 50 && sub5 <= 59) {
+                sub5 = 6 * c5;
+            } else if (sub5 >= 45 && sub5 <= 49) {
+                sub5 = 5 * c5;
+            } else if (sub5 >= 40 && sub5 <= 44) {
+                sub5 = 4 * c5;
+            } else if (sub5 >= 0 && sub5 <= 39) {
+                sub5 = 0 * c5;
+            }
+
+            if (sub6 >= 90 && sub6 <= 100) {
+                sub6 = 10 * c6;
+            } else if (sub6 >= 80 && sub6 <= 89) {
+                sub6 = 9 * c6;
+            } else if (sub6 >= 70 && sub6 <= 79) {
+                sub6 = 8 * c6;
+            } else if (sub6 >= 60 && sub6 <= 69) {
+                sub6 = 7 * c6;
+            } else if (sub6 >= 50 && sub6 <= 59) {
+                sub6 = 6 * c6;
+            } else if (sub6 >= 45 && sub6 <= 49) {
+                sub6 = 5 * c6;
+            } else if (sub6 >= 40 && sub6 <= 44) {
+                sub6 = 4 * c6;
+            } else if (sub6 >= 0 && sub6 <= 39) {
+                sub6 = 0 * c6;
+            }
+
+
+
+            var total = sub1 + sub2 + sub3 + sub4 + sub5 + sub6;
+            var cs = parseInt(c1, 10) + parseInt(c2, 10) + parseInt(c3, 10) + parseInt(c4, 10) + parseInt(c5, 10) + parseInt(c6, 10)
+            var sgpa = (total / cs);
+            var per = (sgpa - 0.75) * 10;
+
+            document.getElementById('result').innerHTML = sgpa.toFixed(2) + " SGPA" + "<br />" + "And The Percentage is " + per.toFixed(2) + "%";
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style1.css">
+
+<body>
+    <h1>SGPA to CGPA Calculator</h1>
+    <div class="wrapper">
+        <div class="con">
+            1sem SGPA&nbsp;&nbsp;&nbsp; <input type="number" id="num1"><br><br> 2sem SGPA &nbsp;&nbsp;&nbsp;<input type="number" id="num2"><br><br> 3sem SGPA &nbsp;&nbsp;&nbsp;<input type="number" id="num3"><br><br> 4sem SGPA&nbsp;&nbsp;&nbsp;
+            <input type="number" id="num4"><br><br> 5sem SGPA &nbsp;&nbsp;&nbsp;<input type="number" id="num5"><br><br> 6sem SGPA &nbsp;&nbsp;&nbsp;<input type="number" id="num6"><br><br> 7sem SGPA &nbsp;&nbsp;&nbsp;<input type="number" id="num7"><br><br>            8sem SGPA &nbsp;&nbsp;
+            <input type="number" id="num8"><br><br>
+            <button type="button" onclick="fun()">convert</button></div>
+        <p id="res"></p>
+    </div>
+    <script type="text/javascript">
+        function fun() {
+            var n1 = document.getElementById('num1').value;
+            var n2 = document.getElementById('num2').value;
+            var n3 = document.getElementById('num3').value;
+            var n4 = document.getElementById('num4').value;
+            var n5 = document.getElementById('num5').value;
+            var n6 = document.getElementById('num6').value;
+            var n7 = document.getElementById('num7').value;
+            var n8 = document.getElementById('num8').value;
+            var total = (parseInt(n1) + parseInt(n2) + parseInt(n3) + parseInt(n4) + parseInt(n5) + parseInt(n6) + parseInt(n7) + parseInt(n8)) / 8;
+            document.getElementById('res').innerHTML = "CGPA=" + total;
+        }
+    </script>
+
+</body>
+
+</html>
